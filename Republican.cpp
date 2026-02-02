@@ -4,6 +4,12 @@
 #include <condition_variable>
 using namespace std;
 
+   /* 
+   This solution might cause starvation for the other gender. 
+   This problem can be solved by letting the other gender use 
+   the bathroom once a gender empties the room
+   */
+  
 class Bathroom {
 private:
     mutex mtx;
